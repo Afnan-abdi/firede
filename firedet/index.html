@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Fire Detection</a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="upload.html">Image Upload Detection</a></li>
+                        <li><a href="camera.html">Live Camera Detection</a></li>
+                        <li><a href="video.html">Video Detection</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Revolutionary Fire Detection at Your Fingertips</h1>
+                <p>Utilize cutting-edge technology to detect fires in real-time, ensuring safety and peace of mind.</p>
+                <a href="learn-more.html" class="cta-button">Learn More</a>
+                <div class="video-button">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div class="hero-image">
+              
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="intro container">
+            <div class="intro-text">
+                <h2>Welcome to Fire Detection Service</h2>
+                <p>Our service provides advanced fire detection capabilities through real-time analysis of images, live camera feeds, and video uploads to ensure safety and prompt fire detection.</p>
+            </div>
+            <img src="images/fi.jpg" alt="Fire Detection System" class="intro-image">
+        </section>
+        <section class="how-it-works container">
+            <h2>Our Features</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="images/step1.jpg" alt="Step 1">
+                    <h3>Upload Image</h3>
+                    <p>Upload images for quick and accurate fire detection using our advanced image processing technology.</p>
+                </div>
+                <div class="step">
+                    <img src="images/step2.jpg" alt="Step 2">
+                    <h3>Scan a Video</h3>
+                    <p>Analyze video uploads to detect fires and ensure safety across various environments.</p>
+                </div>
+                <div class="step">
+                    <img src="images/step3.jpg" alt="Step 3">
+                    <h3>Real-Time Detection</h3>
+                    <p>Instantly detect fires through live camera feeds and prevent disasters before they escalate.</p>
+                </div>
+            </div>
+        </section>
+        <section class="features container">
+            <img src="images/images (2).png" alt="Fire Detection Feature">
+            <div class="features-text">
+                <h2>How It Works</h2>
+                <p>Our process is simple and efficient. Follow these steps to utilize our fire detection services:</p>
+                <p>Upload: Upload an image or video, or use your live camera feed.</p>
+                <p>Analyze: Our system analyzes the input in real-time.</p>
+                <p>Feedback: Receive immediate feedback on fire detection status.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <span>Fire Detection</span>
+            </div>
+            <div class="sitemap">
+                <h3>Sitemap</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social">
+                <h3>Social</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Fire Detection</p>
+            <p>Designed by Your Name</p>
+        </div>
+    </footer>
+    <script>
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

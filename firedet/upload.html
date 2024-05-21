@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Detection</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to main styles -->
+    <link rel="stylesheet" href="upload.css"> <!-- Link to upload-specific styles -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Image Upload Detection</a></li>
+                <li><a href="camera.html">Live Camera Detection</a></li>
+                <li><a href="video.html">Video Detection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="upload-container">
+            <div class="upload-header">
+                <h2>Upload shot</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="upload-info">
+                <div class="upload-info-item">
+                    <img src="images/icon-image.png" alt="Images">
+                    <p>Images</p>
+                    <small>PNG, JPG, GIF, in-app cropping</small>
+                </div>
+            </div>
+            <div class="upload-box">
+                <div class="upload-box-content">
+                    <img src="images/step1.jpg" alt="Upload Icon">
+                    <p>Drag & drop to upload</p>
+                    <a href="#" id="browse-link">or browse</a>
+                    <input type="file" id="image-upload" accept="image/*" style="display:none;">
+                </div>
+            </div>
+            <button class="upload-button" id="upload-btn">Upload</button>
+            <div id="result"></div>
+            <p class="upload-footer">Please read our <a href="#">Community Guidelines</a> before uploading.</p>
+        </div>
+    </main>
+    <script src="upload.js"></script>
+</body>
+</html>

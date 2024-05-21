@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background: fcecf3;
+    color: #544c4c;
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    color: #4e4444;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1em;
+}
+
+header nav ul li a {
+    color: #4e4444;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background: #f04e30;
+    color: #fff;
+    border-radius: 0.5em;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/amp.jpg') no-repeat center center/cover; /* Replace with your image URL */
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0 2em;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.hero-text .cta-button {
+    padding: 0.8em 2em;
+    background: #f04e30;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5em;
+    transition: background 0.3s ease;
+}
+
+.hero-text .cta-button:hover {
+    background: #e03e20;
+}
+
+/* Main Content */
+main .container {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text h2 {
+    font-size: 2.5em;
+    color: #1a1a1a;
+    margin-bottom: 0.5em;
+}
+
+.intro-text p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.intro-image {
+    max-width: 45%;
+    border-radius: 0.5em;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    align-items: center;
+    padding: 2em 0;
+    background: #f9f9f9;
+}
+
+.features img {
+    max-width: 50%;
+    border-radius: 0.5em;
+}
+
+.features .features-text {
+    max-width: 50%;
+    padding: 0 2em;
+}
+
+.features .features-text h2 {
+    font-size: 2.5em;
+    color: #1a1a1a;
+    margin-bottom: 0.5em;
+}
+
+.features .features-text p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 2em 0;
+    background: #fff;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5em;
+    color: #1a1a1a;
+    margin-bottom: 1em;
+}
+
+.how-it-works p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.how-it-works .step {
+    flex: 1;
+    background: #f9f9f9;
+    border-radius: 0.5em;
+    padding: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works .step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.how-it-works .step img {
+    width: 100%;
+    max-height: 150px; /* Ensure consistent image height */
+    object-fit: contain; /* Ensure the image scales correctly */
+    border-radius: 0.5em;
+}
+
+.how-it-works .step h3 {
+    margin: 1em 0 0.5em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.how-it-works .step p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 1em 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+footer .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer .logo span {
+    color: #1a1a1a;
+}
+
+footer .sitemap, footer .social {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sitemap h3, footer .social h3 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+footer .sitemap a, footer .social a {
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.3em 0;
+    transition: color 0.3s ease;
+}
+
+footer .sitemap a:hover, footer .social a:hover {
+    color: #f04e30;
+}
+
+footer .social a {
+    font-size: 1.2em;
+}
+
+footer .social a i {
+    margin-right: 0.5em;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 1em;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text, .intro-image {
+        max-width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features img, .features .features-text {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .how-it-works .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-it-works .step {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .logo {
+        margin-bottom: 1em;
+    }
+
+    header .fa-bars {
+        display: block;
+        color: #fff;
+    }
+
+    header .nav-links {
+        position: absolute;
+        right: -200px;
+        top: 0;
+        background: #333;
+        height: 100%;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    header .fa-times {
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 1em 0;
+    }
+}

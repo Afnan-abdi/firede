@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload Detection</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to main styles -->
+    <link rel="stylesheet" href="video.css"> <!-- Link to video-specific styles -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Image Upload Detection</a></li>
+                <li><a href="camera.html">Live Camera Detection</a></li>
+                <li><a href="video.html">Video Detection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="upload-container">
+            <div class="upload-header">
+                <h2>Upload Video for Detection</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="upload-box">
+                <div class="upload-box-content">
+                    <img src="images/step2.jpg" alt="Upload Icon">
+                    <p>Drag & drop to upload</p>
+                    <a href="#" id="browse-link">or browse</a>
+                    <input type="file" id="video-upload" accept="video/*" style="display:none;">
+                </div>
+            </div>
+            <video id="video" controls width="600" height="400" style="display:none;"></video>
+            <button class="upload-button" id="upload-btn">Upload</button>
+            <button class="upload-button" id="detect-btn" style="display:none;">Start Detection</button>
+            <button class="upload-button" id="stop-btn" style="display:none;">Stop Detection</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="video.js"></script>
+</body>
+</html>

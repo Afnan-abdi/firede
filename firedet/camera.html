@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Camera Detection</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to main styles -->
+    <link rel="stylesheet" href="camera.css"> <!-- Link to camera-specific styles -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Image Upload Detection</a></li>
+                <li><a href="camera.html">Live Camera Detection</a></li>
+                <li><a href="video.html">Video Detection</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="camera-container">
+            <div class="camera-header">
+                <h2>Live Camera Detection</h2>
+                <button class="close-button" id="close-camera">&times;</button>
+            </div>
+            <div class="camera-box" id="camera-box">
+                <div class="camera-box-content">
+                    <img src="images/step3.jpg" alt="Camera Icon">
+                    <p>Click to open camera</p>
+                </div>
+                <video id="camera" autoplay playsinline width="600" height="400" style="display:none;"></video>
+            </div>
+            <button class="camera-button" id="start-detect" style="display:none;">Start Detection</button>
+            <button class="camera-button" id="stop-detect" style="display:none;">Stop Detection</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="camera.js"></script>
+</body>
+</html>
